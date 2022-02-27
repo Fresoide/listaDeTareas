@@ -1,0 +1,149 @@
+html {
+    font-size: 10px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+body {
+    background-color: rgb(235, 243, 245);
+}
+.container {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 45rem;
+    min-height: 30rem;
+    border-radius: 1.2rem;
+    margin: 6rem auto;
+    padding: 30px;
+    box-shadow:2px 2px 15px 1px rgba(127, 177, 182, 0.288);
+}
+
+.container h1 {
+    font-size: 35px;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+
+}
+.inputybutton {
+    display: flex;
+    justify-content: center;
+}
+.tarea {
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 1.3rem;
+    width: 80%;
+}
+
+
+.agregar {
+    display: inline-block;
+    width: 6rem;
+    height: 3.2rem;
+    background-color: rgb(221, 220, 220);
+    border: none;
+    font-size: 24px;
+    color: rgb(131, 130, 130);
+    font-style: bold;
+    border-radius: .5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    cursor: pointer;
+
+}
+.agregar:hover {
+    background-color: rgb(185, 183, 183);
+}
+.agregar:active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+hr {
+    border-color: rgba(238, 238, 238, 0.205);
+    width: 75%;
+    margin: 1rem auto;
+}
+.tareas {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+
+
+.vaciar {
+    color: rgb(211, 96, 96);
+    margin: 2rem auto;
+    padding: 1.2rem;
+    border: none;
+    background: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.vaciar:hover {
+    letter-spacing: 1.5px;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: .5rem;
+}
+.vaciar:active {
+    background-color: black;
+    color: white;
+}
+.tareas > div {
+    display: flex;
+}
+
+.iconos {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    top: -28px;
+    gap: 3px;
+    right: -20px;
+
+}
+
+.fa-trash {
+    position: relative;
+    cursor: pointer;
+    color: rgb(211, 96, 96);
+
+}
+
+.fa-trash:active{
+    color: rgb(134, 68, 68);
+}
+
+.fa-pencil {
+    position: relative;
+    cursor: pointer;
+    color: rgba(98, 233, 86, 0.61);
+}
+.fa-pencil:active {
+    color: rgba(57, 146, 49, 0.61);
+
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        max-width: 300px;
+        
+    }
+    .container > h1 {
+        font-size: 20px;
+    }
+    .tareas > p {
+        font-size: 20px;
+    }
+}
